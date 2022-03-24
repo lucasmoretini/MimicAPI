@@ -27,6 +27,12 @@ namespace MimicAPI.V1.Controllers
             _repository = repository;
             _mapper = mapper;
         }
+        
+        [HttpGet("/message")]
+        public IActionResult Metodo()
+        {
+            return Ok(new { message = "ok" });
+        }
 
 
         [MapToApiVersion("1.0")]
