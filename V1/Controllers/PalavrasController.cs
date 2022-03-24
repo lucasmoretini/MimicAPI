@@ -43,7 +43,7 @@ namespace MimicAPI.V1.Controllers
 
             CriarLinksListPalavraDTO(query, item, lista);
             
-            return Accepted(lista);
+            return Ok(lista);
         }
 
         private void CriarLinksListPalavraDTO(PalavraUrlQuery query, PaginationList<Palavra> item, PaginationList<PalavraDTO> lista)
